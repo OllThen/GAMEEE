@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7S7ECP7D7X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7S7ECP7D7X');
+</script>
+</head>
+<body>
+
+    <!-- Навигационная панель -->
+    <nav class="navbar">
+        <div class="logo">Game Store</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Games</a></li>
+            <li><a href="#">Store</a></li>
+            <li><a href="#">Community</a></li>
+        </ul>
+        <div class="login-section">
+            <button id="login-btn">Login</button>
+            <span id="username"></span>
+        </div>
+        <div class="cart-section">
+            <button id="cart-btn">Cart (<span id="cart-count">0</span>)</button>
+        </div>
+    </nav>
+
+    <!-- Баннер -->
+    <section class="banner">
+        <h1>Welcome to Game Store</h1>
+        <p>Find the best games here!</p>
+        <button>Explore Now</button>
+    </section>
+
+    <!-- Секция с карточками игр -->
+    <section class="game-cards">
+        <h2>Top Games</h2>
+        <div class="card-container" id="card-container">
+            <!-- Карточки игр будут динамически подгружаться через JavaScript -->
+        </div>
+    </section>
+
+    <!-- Модальное окно для логина -->
+    <div class="modal" id="login-modal">
+        <div class="modal-content">
+            <h2>Login</h2>
+            <input type="text" id="username-input" placeholder="Enter your username">
+            <button id="login-submit">Login</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
